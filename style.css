@@ -1,0 +1,280 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 1vw;
+        }
+        
+        .container{
+            padding: 0;
+            
+            flex-direction: column;
+            
+        }
+        
+        .navbar{
+            position: fixed;
+            width: 100vw;
+            display: flex;
+            flex-direction: row !important;
+            justify-content: space-between;
+            background-color: rgb(250, 250, 250);    
+            z-index: 50;
+        }
+        .navZ{
+            letter-spacing: 0.1vw;
+            padding-left: 0.5vw;
+            
+            
+        }
+        
+        .navZ:hover{
+            background-color: rgb(180, 179, 180);
+        }
+        .navr{
+            
+            color: black;
+            word-spacing: 10px;
+            padding-right: 2%;
+        }
+        .navbu:hover{
+            background-color: rgb(180, 179, 180);
+        }
+        .navbu{
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+            padding: 4px;
+            letter-spacing: 2px;
+        }
+        .home{
+            color: black;
+            font-size: 1.5rem;
+        }
+
+
+
+
+        .burger {
+            display: block;
+           justify-content: center;
+            height: auto;
+            width: 100vw;
+            padding-top: 0.2vw;
+                            }
+
+        #hamburger{
+            width: 100%;
+                 }
+        
+        .catering{
+            color: rgb(85, 81, 81);
+            letter-spacing: 6px;
+        }
+
+        .about{
+             /* photo + texte*/
+           
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid rgb(175, 172, 172);
+            padding: 5% 10%;
+            justify-content: space-around;
+            align-items: center; 
+        }
+
+        .aboutp{
+             /* partie photo*/
+            position: relative;
+            border: none;
+            width: 30%;
+        }
+
+        .table{
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .aboutt{ /* partie texte*/
+           
+            width: 35%;
+            line-height: 2rem;                 
+            
+        }
+
+        .menu{
+             /* photo + texte*/
+             display: flex;
+             flex-direction: row;
+             border-bottom: 2px solid rgb(175, 172, 172);
+             padding: 5% 10% ;
+             justify-content: space-evenly;
+             align-items: center;
+             padding: 5% 5%;
+        }
+        .detail{
+            color: rgba(43, 41, 41, 0.671);
+            font-size: 1rem;
+        }
+
+        ul{
+            list-style: none;
+            text-align: center;
+        }
+
+        .menut{
+            /* partie photo*/
+            position: relative;
+            display: flex;
+            flex-direction: column;
+             text-align: justify;
+            width: 40%;
+            line-height: 3rem;
+            font-family: 'Playfair Display', serif;
+            border: none;
+                    }
+            
+
+        .menup{ /* partie texte*/
+            position: relative;
+            border: none;
+            width: 30%;
+            
+        }
+
+        .plat{
+            
+           width: 80%;
+           
+        }
+
+        h5{
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 3px;
+            font-size: 1.3rem;
+            font-weight: 100;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+
+
+        h1{
+            text-align: center;
+        }
+
+
+
+        h3{
+            text-align: center;
+            font-weight: lighter;
+            font-family: 'Playfair Display', serif; 
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+
+        .contact {
+            padding: 5% 18%;
+            text-align: left !important;
+           
+        }   
+        
+        .butt{
+            background-color: rgb(233, 230, 230);
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 7px 7px;
+        }
+        .butt:hover{
+            background-color: gray !important;
+            cursor: pointer;
+        }
+
+        input{
+            padding: 1%;
+            width: 100%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid grey;
+        }
+        
+        
+    @media screen and (max-width:380px), (orientation: portrait){
+        
+    *{
+        font-size: 2vw;
+        
+    }
+ 
+     .about{
+             /* photo + texte*/
+           
+            display: flex;
+            flex-direction: column-reverse;
+            border-bottom: 1px solid rgb(175, 172, 172);
+            padding: 5% 0%;
+            row-gap: 20px;
+            align-items: center; 
+        }
+
+        .aboutt{ /* partie texte*/
+                       width: 80%;
+                  line-height: 3rem;  
+                  text-align: center;               
+                    }
+
+                    .aboutp{
+                        /* partie photo*/
+                       position: relative;
+                       border: none;
+                       width: 70%;
+                   }          
+
+                   .menu{
+                    /* photo + texte*/
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 2px solid rgb(175, 172, 172);
+                   justify-content: center;                   
+                    align-items: center;
+                    padding: 5% 0%;
+
+               }
+
+               .menup{ /* partie texte*/
+                position: relative;
+                border: none;
+                width: 80%;
+               
+            }
+
+            .menut{
+                margin-bottom: 5%;
+            }
+
+            .plat{
+                            width: 100%;
+                             }
+
+                             .contact {
+                                padding: 5% 2%;
+                                                                
+                            }  
+
+                                h1{
+                                    font-size: 3rem;
+                                }
+                                
+                                input{
+                                    padding: 4%;
+                                    width: 100%;
+                                    border-top: none;
+                                    border-left: none;
+                                    border-right: none;
+                                    border-bottom: 1px solid grey;
+                                }
+    
+    }
