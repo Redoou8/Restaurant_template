@@ -3,7 +3,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Playfair Display', serif;
-            font-size: 1vw;
+            font-size: 0.7vw;
         }
         
         .container{
@@ -17,12 +17,14 @@
             box-sizing: border-box;
             position: fixed;
             width: 100vw;
-            height: 6vh;
+            height: 4vh;
             display: flex;
             flex-direction: row ;
             justify-content: space-between;
             background-color: rgb(250, 250, 250);    
             z-index: 50;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajout de l'ombre dirigée vers le bas */
+
         }
         .navZ{
             display: flex;
@@ -51,12 +53,12 @@
         }
         .navbu{
             display: flex;
-            
+            box-sizing: border-box;
             text-decoration: none;
             color: black;
             font-size: 1rem;
             padding: 2vh;
-            margin: 1vh;
+           
             letter-spacing: 2px;
              justify-content: center;
             align-items: center;
@@ -93,8 +95,8 @@
             display: flex;
             flex-direction: row;
             border-bottom: 1px solid rgb(175, 172, 172);
-            padding: 5% 10%;
-            justify-content: space-around;
+            padding: 5% 20%;
+            justify-content: space-evenly;
             align-items: center; 
         }
 
@@ -122,10 +124,10 @@
              display: flex;
              flex-direction: row;
              border-bottom: 2px solid rgb(175, 172, 172);
-             padding: 5% 10% ;
+             padding: 5% 20% 5% 24% ;
              justify-content: space-evenly;
-             align-items: center;
-             padding: 5% 5%;
+           
+             
         }
         .detail{
             color: rgba(43, 41, 41, 0.671);
@@ -134,15 +136,14 @@
 
         ul{
             list-style: none;
-            text-align: center;
+           
         }
 
-        .menut{
-            /* partie photo*/
+        .menut{/* partie texte*/
+            
             position: relative;
             display: flex;
             flex-direction: column;
-             text-align: justify;
             width: 40%;
             line-height: 3rem;
             font-family: 'Playfair Display', serif;
@@ -150,10 +151,10 @@
                     }
             
 
-        .menup{ /* partie texte*/
+        .menup{ /* partie photo*/
             position: relative;
             border: none;
-            width: 30%;
+            width: 40%;
             
         }
 
@@ -168,14 +169,15 @@
             letter-spacing: 3px;
             font-size: 1.3rem;
             font-weight: 100;
-            text-align: center;
+            
             margin-bottom: 1rem;
         }
 
 
 
         h1{
-            text-align: center;
+            font-size: 2.4rem;
+       
         }
 
 
@@ -184,13 +186,13 @@
             text-align: center;
             font-weight: lighter;
             font-family: 'Playfair Display', serif; 
-            font-size: 3rem;
+            font-size: 2.4rem;
             margin-bottom: 2rem;
         }
 
 
         .contact {
-            padding: 5% 18%;
+            padding: 5% 24%;
             text-align: left !important;
            
         }   
@@ -214,6 +216,39 @@
             border-right: none;
             border-bottom: 1px solid grey;
         }
+
+
+        .alert {
+            position: fixed;
+            top: 10%;
+            right: 1%;
+            padding: 5px 20px;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.6s;
+            margin-bottom: 15px;
+            justify-content: center;
+            row-gap: 10vh;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgb(92, 33, 105);
+            background-color: rgb(155, 111, 163);
+            border: 2px solid rgb(122, 60, 134);
+          }
+                    
+          .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          
+          .closebtn:hover {
+            color: black;
+          }
         
         
     @media screen and (max-width:380px), (orientation: portrait){
@@ -284,7 +319,7 @@
                                 
                                 input{
                                     padding: 4%;
-                                    width: 100%;
+                                    width: 90%;
                                     border-top: none;
                                     border-left: none;
                                     border-right: none;

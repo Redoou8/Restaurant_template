@@ -52,7 +52,7 @@
         <div class="aboutt">  <!-- text-->
             <h3>About Catering</h3> 
 
-            <h5>Tradition since 1889</h5> 
+            <h5 style="text-align: center;">Tradition since 1889</h5> 
             <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <strong>seasonal</strong> ingredients.
               
            <span style="color: gray;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -127,5 +127,37 @@
 
 </div>
 
+<div class="alert info">
+    <span class="closebtn">&times;</span>  
+    <h1 style="text-align: center;"> <strong>Reproduction of a model from scratch (w/ some changes)</strong> </h1>
+    <ul>
+        <li>
+             
+        </li>
+
+        <li style="text-align: center; margin: 10px 0; padding: 10px;">
+           - - - - - - LINK - - - - - -
+        </li>
+
+        <li>
+          <a href="https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm" target="_blank" style="color: aliceblue;"> https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm </a>
+        </li>
+    </ul>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() { //utilisation async meilleure ? 
+
+const closeBtn = document.querySelector('.closebtn');
+closeBtn.addEventListener("click", function() {
+  var div = this.parentElement;
+  div.style.opacity = "0";
+  setTimeout(function() {
+    div.style.display = "none";
+  }, 600);
+});
+})
+  </script>
 </body>
 </html>
