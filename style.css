@@ -14,18 +14,22 @@
         }
         
         .navbar{
+            box-sizing: border-box;
             position: fixed;
             width: 100vw;
+            height: 6vh;
             display: flex;
-            flex-direction: row !important;
+            flex-direction: row ;
             justify-content: space-between;
             background-color: rgb(250, 250, 250);    
             z-index: 50;
         }
         .navZ{
+            display: flex;
             letter-spacing: 0.1vw;
             padding-left: 0.5vw;
-            
+            align-items: center;
+            margin: 1vh 0;
             
         }
         
@@ -33,24 +37,33 @@
             background-color: rgb(180, 179, 180);
         }
         .navr{
+            display: flex;
             
+            position: relative;
+            height: 100%;
             color: black;
             word-spacing: 10px;
             padding-right: 2%;
+
         }
         .navbu:hover{
             background-color: rgb(180, 179, 180);
         }
         .navbu{
+            display: flex;
+            
             text-decoration: none;
             color: black;
-            font-size: 1.5rem;
-            padding: 4px;
+            font-size: 1rem;
+            padding: 2vh;
+            margin: 1vh;
             letter-spacing: 2px;
+             justify-content: center;
+            align-items: center;
         }
         .home{
             color: black;
-            font-size: 1.5rem;
+            font-size: 1rem;
             text-decoration: none;
         }
 
